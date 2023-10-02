@@ -1,0 +1,47 @@
+{
+  "name": "vivo-api",
+  "version": "1.0.0",
+  "description": "API RESTful com Node.js e MySQL",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "start:dev": "nodemon src/index.js",
+    "lint": "eslint src --fix",
+    "prepare": "husky install",
+    "pre-commit": "npm run lint",
+    "prettier": "prettier --write \"src/**/*.js\"",
+    "format": "npm run prettier",
+    "pre-push": "npm run format"
+  },
+  "keywords": [],
+  "author": "Anderson Giusti - GitHub https://github.com/andersoncgiusti",
+  "license": "ISC",
+  "volta": {
+    "node": "18.16.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "sequelize": "^6.33.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0",
+    "winston": "^3.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.45.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "husky": "^8.0.3",
+    "nodemon": "^3.0.1",
+    "portfinder": "^1.0.32",
+    "prettier": "^3.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run pre-commit",
+      "pre-push": "npm run pre-push"
+    }
+  }
+}
