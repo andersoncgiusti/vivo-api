@@ -37,7 +37,7 @@ npm start
 ```sh
 http://localhost:3000
 ```
-### Document
+### Documentação
 ```sh
 http://localhost:3000/api-docs
 ```
@@ -47,7 +47,7 @@ http://localhost:3000/api-docs
 ### Collections
 [endpoints](https://drive.google.com/file/d/1SZ6Wl-Rj0Yw253_aJrzY_Kecvmv8UW2V/view?usp=sharing)
 
-### Import database
+### Importando bando de dados
 [vivo](https://drive.google.com/file/d/1UlUU2QYQhBmPkfNz2vw1CwYy7q4ujaI8/view?usp=sharing)
 
 ### Interface desenvolvida para ser exibida nesta API
